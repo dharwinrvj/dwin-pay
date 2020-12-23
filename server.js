@@ -39,8 +39,8 @@ app.get("/pay", (req, res) => {
       payment_method: "paypal",
     },
     redirect_urls: {
-      return_url: "http://localhost:5005/success",
-      cancel_url: "http://localhost:5005/cancel",
+      return_url: "https://dharwin-payment-app.herokuapp.com/success",
+      cancel_url: "https://dharwin-payment-app.herokuapp.com/cancel",
     },
     transactions: [
       {
