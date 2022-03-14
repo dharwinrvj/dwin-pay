@@ -50,16 +50,16 @@ app.get("/pay", (req, res) => {
               name: "Flower Pot",
               sku: "Flower Pot",
               price: "20.00",
-              currency: "INR",
+              currency: "USD",
               quantity: 1,
             },
           ],
         },
         amount: {
-          currency: "INR",
+          currency: "USD",
           total: "20.00",
         },
-        description: "Your Money cannot be returned for any reason.....",
+        description: "Your Money cannot be returned for any reason.....",   
       },
     ],
   };
@@ -87,7 +87,7 @@ app.get("/success", (req, res) => {
     transactions: [
       {
         amount: {
-          currency: "INR",
+          currency: "USD",
           total: "20.00",
         },
       },
